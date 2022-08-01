@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        alert("Hello World");
+    </script>
+
+</head>
+
+<body>
+    <p id="p1">Hello world</p>
+    <p id="p2"></p> <!--Script should be written after a tag if you want to print a text thought innerHTML-->
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <script>
+        var i = 4,j = 9.45;
+        var t = i + j;
+        var x = ("5"),y = Number("6");
+        var firstName = "Bill";
+        var lastName = "Samuel";
+        document.getElementById("p2").innerHTML =  "Total is " + t;
+        document.getElementById("p3").innerHTML = "Name is " + (firstName +  " " + lastName);
+        document.getElementById("p4").innerHTML = x + y;
+        
+        let person1 = {
+            firstName: "Dr",
+            lastName: "Conrad",
+            age: 30,
+            eyecolor: "blue",
+        };
+        document.getElementById("p5").innerHTML = person1.firstName + " & Age is " + person1.age + " & eyecolor is " + person1.eyecolor;
+
+        var n = Number("123");
+        n = n + 2;
+        var s = n + "2";
+        s = n + s;
+        documnet.getElementById("p6").innerHTML = s;
+    </script>
+</body>
+
+</html>
